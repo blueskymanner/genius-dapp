@@ -1,0 +1,20 @@
+// contracts/NewToken.sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract NewToken is ERC20 {
+    constructor (
+        string memory name,
+        string memory symbol,
+        uint256 initialSupply
+    ) 
+        ERC20(name, symbol)
+        payable
+    {
+        require(initialSupply > 0, "NewToken: supply cannot be zero");
+
+        _mint(msg.sender, initialSupply);
+    }
+}

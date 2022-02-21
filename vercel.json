@@ -1,0 +1,11 @@
+{
+  "github": {
+    "silent": true
+  },
+  "redirects": [
+    {
+      "source": "/analytics",
+      "destination": "https://app.usefathom.com/share/puesmvfj/tokenlaunch.com"
+    }
+  ]
+}
